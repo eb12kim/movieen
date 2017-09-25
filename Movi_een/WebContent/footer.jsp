@@ -13,5 +13,5 @@
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
   </div>
-  <p>Movi'een 2017, All rights reserved</p>
+  <p>Movi'een 2017, All rights reserved modify</p>
 </footer>

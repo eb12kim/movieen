@@ -963,7 +963,7 @@ public class PostDAO {
 		return null;
 	}
 	
-	/* 은별 170831 *//////////////////////////////////////////////////////////////////////////////////////////////
+	/* 170831 *//////////////////////////////////////////////////////////////////////////////////////////////
 	public int getSearchResultListCount(String search, int type, int page) {
 		String sql = "select count(*) from post where post_nation like ? or movie_id in (select movie_id from movie where movie_title like ?) order by post_likecount desc";
 		int x = 0;
@@ -1040,7 +1040,7 @@ public class PostDAO {
 		return null;
 	}
 	
-	/////////////////////////////// 수진 수정 170831
+	/////////////////////////////// 수정 170831
 	public int getMovieLikeListCount(String[] movieLike) {
 		String sql = "select count(*) from post where movie_id in (select movie_id from movie where genre in (?,?,?)) order by post_likecount desc";
 		List<PostBean> postList = new ArrayList<>();
@@ -1251,7 +1251,7 @@ public class PostDAO {
 		return null;
 	}
 	
-	//구글맵 by 환규////////////////////////////////////////////////////////////////////////////////////////////////////
+	//구글맵 ///////////////////////////////////////////////////////////////////////////////////////////////////
     
     public List<MapBean> initMap() {
         String sql = "select * from post, movie where post.movie_id = movie.movie_id";
