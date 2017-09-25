@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Movi_een</display-name>
+    <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>Movi_een/main.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>MemberFrontController</servlet-name>
+  	<url-pattern>*.me</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>MemberFrontController</servlet-name>
+  	<servlet-class>net.member.action.MemberFrontController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>MovieFrontController</servlet-name>
+  	<url-pattern>*.mo</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>MovieFrontController</servlet-name>
+  	<servlet-class>net.movie.action.MovieFrontController</servlet-class>
+  </servlet>
+  	<servlet-mapping>
+		<servlet-name>PostFrontController</servlet-name>
+		<url-pattern>*.po</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>PostFrontController</servlet-name>
+		<servlet-class>net.post.action.PostFrontController</servlet-class>
+	</servlet>
+</web-app>

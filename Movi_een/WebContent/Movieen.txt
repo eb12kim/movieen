@@ -1,0 +1,64 @@
+Action.java
+ActionForward.java
+각각 FrontController.java
+각각 Bean.java DAO.java
+
+회원관리
+o	MemberLoginAction.java
+o	MemberJoinAction.java
+o	MemberListAction.java
+o	MemberViewAction.java
+o	MemberUpdateView.java
+o	MemberUpdateAction.java
+o	MemberDeleteAction.java
+o	member_joinForm.jsp 
+o	member_loginForm.jsp
+o	member_updateForm.jsp
+o	member_info.jsp
+o	member_list.jsp
+
+영화관리
+o	MovieAddAction.java
+o	MovieModifyAction.java
+o	MovieModifyView.java
+o	MovieListAction.java
+o	MovieViewAction.java
+o	MovieDeleteAction.java
+o	movie_addForm.jsp
+o	movie_modifyForm.jsp
+o	movie_info.jsp
+o	movie_list.jsp
+
+게시판관리
+	PostAddAction.java
+	PostDeleteAction.java
+	PostDetailAction.java
+	PostListAction.java
+	PostModifyView.java
+	PostModifyAction.java
+	PostReplyAction.java // reply로 넘어가기
+	PostLikeAction.java
+	
+	post_list.jsp	// 게시글 제목 옆에 댓글 수 누르면 reply_list 나오게
+	post_detail.jsp // 밑에 reply_list & ReplyAddAction 달기
+	post_writeForm.jsp
+	post_modifyForm.jsp
+	
+댓글관리
+	ReplyAddAction.java
+	ReplyListAction.java // 댓글만 보기
+	ReplyDeleteAction.java
+	ReplyModifyView.java
+	ReplyModifyAction.java
+	
+	reply_list.jsp
+	
+web.xml 에 추가
+  <servlet-mapping>
+  	<servlet-name>BoardFrontController</servlet-name>
+  	<url-pattern>*.bo</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>BoardFrontController</servlet-name>
+  	<servlet-class>net.board.action.BoardFrontController</servlet-class>
+  </servlet>
